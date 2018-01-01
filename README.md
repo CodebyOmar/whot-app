@@ -1,4 +1,4 @@
-# whotapp
+# whot-app
 
 > The Nigerian whot! game
 
