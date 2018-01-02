@@ -1,6 +1,10 @@
+.app-name{
+  font-family: 'Passero One', cursive;
+  font-size: 70px;
+  color:#fff;
+}
 
-.body {
-  width: 100%;
+.sign-in{
   height: 100%;
-  position: fixed;
+  width: 100%;
 }
