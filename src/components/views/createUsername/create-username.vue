@@ -4,8 +4,11 @@
  
 
  <script>
+ import appFooter from "@/components/layout/app-footer/app-footer"
+
  export default {
-   name:"create-player"
+   name:"create-player",
+   components:{appFooter}
  }
  </script>
  
