@@ -6,6 +6,8 @@ import createPlayer from '@/components/views/createUsername/create-username'
 Vue.use(Router)
 
 export default new Router({ 
+  mode:"history",
+  
   routes: [
     {
       path: '/',
