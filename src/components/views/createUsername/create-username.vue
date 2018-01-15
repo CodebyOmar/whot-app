@@ -7,7 +7,7 @@
  import appFooter from "@/components/layout/app-footer/app-footer"
 
  export default {
-   name:"create-player",
+   name:"newPlayer",
    components:{appFooter}
  }
  </script>
