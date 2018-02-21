@@ -8,3 +8,16 @@
   height: 100%;
   width: 100%;
 }
+
+.app-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 5%;
+}
+
+.footer-item{
+  color: #6574CD;
+  font-weight: 400;
+}
