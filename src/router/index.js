@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import signIn from '@/components/views/sign-in/sign-in'
+import homeComponent from '@/components/views/home/home'
 import newPlayer from '@/components/views/createUsername/create-username'
 import gamePlay from "@/components/views/gamePlay/game-play"
 
@@ -11,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'sign-in',
-      component: signIn
+      name: 'home',
+      component: homeComponent
     },
     {
       path: '/newplayer',
