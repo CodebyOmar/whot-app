@@ -14,7 +14,6 @@ export default new Router({
       name: 'sign-in',
       component: signIn
     },
-
     {
       path: '/newplayer',
       name: 'newplayer',

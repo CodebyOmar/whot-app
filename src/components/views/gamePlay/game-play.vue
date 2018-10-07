@@ -1,10 +1,15 @@
 <template src="./game-play.html">
-  
+
 </template>
 
 
 <script>
-export default {
-  name:"game-play"
-}
+  import appLayout from '@/components/layout/app-layout'
+
+  export default {
+    name:"game-play",
+    components: {
+      appLayout
+    }
+  }
 </script>

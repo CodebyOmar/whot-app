@@ -5,13 +5,13 @@
 
 <script>
   import GamePinComponent from '@/components/game-pin.vue'
-  import appFooter from '@/components/layout/app-footer/app-footer'
+  import appLayout from '@/components/layout/app-layout'
 
   export default {
     name:'sign-in',
     components: {
       'game-pin': GamePinComponent,
-      appFooter
+      appLayout
     },
     data() {
       return {
