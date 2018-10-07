@@ -3,13 +3,18 @@
     <div class="text-center">
       <h1 class="app-name">whot-app!</h1>
       <form class="px-3 pt-6 pb-8 mb-4">
-        <game-pin ref="gamePin"></game-pin>
         <div class="mb-4">
-          <input class="shadow border w-full py-2 h-10 w-full text-grey-darker font-bold text-center" type="text" placeholder="Enter game pin!">
+          <h4 class="text-white font-bold">
+            Enter Game Pin
+          </h4>
         </div>
+        <game-pin ref="gamePin" @input="play"></game-pin>
         <div class="mb-4">
-          <button class="bg-pink-dark hover:bg-pink-base text-white font-bold py-2 h-10 mb-4 w-full" type="button">
+          <button :disabled="!pin" class="bg-pink-dark hover:bg-pink-base text-white font-bold py-2 h-10 mb-4 w-full" type="button">
             Play
+          </button>
+          <button class="bg-indigo-light hover:bg-pink-base text-white font-bold py-2 h-10 mb-4 w-full" type="button">
+            Start New Game
           </button>
         </div>
       </form>

@@ -19,6 +19,7 @@
       switchFocus(e, index) {
         this.pin[index] = e.target.value = Number(e.data) || 0
         if (index < 3) this.$el.querySelectorAll('input[type="text"]')[index + 1].focus()
+        else this.$emit('input', this.pin.join(''))
       }
     },
     mounted() {

@@ -12,6 +12,19 @@
     components: {
       'game-pin': GamePinComponent,
       appFooter
+    },
+    data() {
+      return {
+        pin: null
+      }
+    },
+    methods: {
+      play (pin) {
+        this.pin = pin
+      },
+      startNewGame () {
+
+      }
     }
   }
 </script>
