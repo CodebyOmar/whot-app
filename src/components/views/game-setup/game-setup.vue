@@ -11,8 +11,9 @@
       appLayout
     },
     mounted() {
+      // make sure game pin exists in store
       if (!this.$store.state.pin) {
-        console.log(this.$router)
+        this.$router.push({ name: 'home' })
       }
     }
   }

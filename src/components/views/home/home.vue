@@ -13,16 +13,31 @@
       'game-pin': GamePinComponent,
       appLayout
     },
+    computed: {
+      pin () {
+        return this.$store.state.pin
+      }
+    },
     data() {
       return {
-        pin: null
+
       }
     },
     methods: {
-      play (pin) {
-        this.pin = pin
+      setPin (pin) {
+        if (pin && pin.length == 4) {
+          this.$store.commit({
+            type: 'SET_PIN',
+            pin
+          })
+        }
       },
-      startNewGame () {
+      joinGame () {
+        if (this.pin) {
+          this.$router.push({ name: 'game-setup' })
+        }
+      },
+      startGame () {
 
       }
     }

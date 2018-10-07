@@ -7,12 +7,12 @@
           Enter Game Pin
         </h4>
       </div>
-      <game-pin ref="gamePin" @input="play"></game-pin>
+      <game-pin ref="gamePin" @input="setPin"></game-pin>
       <div class="mb-4">
-        <button :disabled="!pin" class="bg-pink-dark hover:bg-pink-base text-white font-bold py-2 h-10 mb-4 w-full" type="button">
+        <button :disabled="!pin" class="bg-pink-dark hover:bg-pink-base text-white font-bold py-2 h-10 mb-4 w-full" @click="joinGame" type="button">
           Play
         </button>
-        <button class="bg-indigo-light hover:bg-pink-base text-white font-bold py-2 h-10 mb-4 w-full" type="button">
+        <button class="bg-indigo-light hover:bg-pink-base text-white font-bold py-2 h-10 mb-4 w-full" @click="startGame" type="button">
           Start New Game
         </button>
       </div>
