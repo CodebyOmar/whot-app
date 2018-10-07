@@ -10,6 +10,25 @@
     components:{
       appLayout
     },
+    data() {
+      return {
+        form: {
+          username: null
+        }
+      }
+    },
+    methods: {
+      startGame (e) {
+        if (e) e.preventDefault();
+        if (this.form.username) {
+          this.$store.commit({
+            type: 'SET_USERNAME',
+            username: this.form.username
+          })
+        }
+        console.log('form', this.form)
+      }
+    },
     mounted() {
       // make sure game pin exists in store
       if (!this.$store.state.pin) {

@@ -1,12 +1,13 @@
 <app-layout>
   <template>
     <h1 class="app-name">whot-app!</h1>
-    <form class="px-4 pt-6 pb-8 mb-4">
+    <form class="px-4 pt-6 pb-8 mb-4" @submit="startGame">
       <div class="mb-4">
-        <input class="shadow border w-full py-2 h-10 w-full text-grey-darker font-bold text-center" type="text" placeholder="Choose a username!">
+        <input class="shadow border w-full py-2 h-10 w-full text-grey-darker font-bold text-center"
+            type="text" placeholder="Choose a username!" v-model="form.username" required>
       </div>
       <div class="mb-4">
-        <button class="bg-pink-dark hover:bg-pink-base text-white font-bold py-2 h-10 mb-4 w-full" type="button">
+        <button class="bg-pink-dark hover:bg-pink-base text-white font-bold py-2 h-10 mb-4 w-full">
           Enter
         </button>
       </div>

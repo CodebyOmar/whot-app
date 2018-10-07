@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import homeComponent from '@/components/views/home/home'
 import gameSetupComponent from '@/components/views/game-setup/game-setup'
-import gamePlay from "@/components/views/game-play/game-play"
+import gamePlayComponent from "@/components/views/game-play/game-play"
 
 Vue.use(Router)
 
@@ -22,7 +22,7 @@ export default new Router({
     {
       path: '/gameplay',
       name: 'game-play',
-      component: gamePlay
+      component: gamePlayComponent
     }
   ]
 })
