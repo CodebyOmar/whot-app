@@ -3,7 +3,12 @@
 </template>
 
 <script>
+import appFooter from './app-footer/app-footer.vue'
+
 export default {
-  name:"app-layout"
+  name:"app-layout",
+  components: {
+    appFooter
+  }
 }
 </script>

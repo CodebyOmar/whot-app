@@ -9,6 +9,11 @@
     name: 'gameSetup',
     components:{
       appLayout
+    },
+    mounted() {
+      if (!this.$store.state.pin) {
+        console.log(this.$router)
+      }
     }
   }
 </script>
